@@ -18,14 +18,22 @@ need to check if the dates are correct but will just set the weekly amount to be
 - Create .env by copying .env.example in root directory, 
 - Update database details and other variables in the .env file.
 
-##### 4. Run Database migration
+##### 4. Install dependencies
+`composer install`
+
+##### 5. Run Database migration
 `php artisan migrate`
 
-##### 5. Run Database seeders
+##### 6. Run Database seeders
 `php artisan db:seed --class=WeekDaysTableSeeder`
 
-##### 6. Start server
+##### 7. Generate application encryption key
+`php artisan key:generate`
+
+##### 8. Start server
 `php artisan serve`
+
+It will start a http serve by default at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 
 ### Testing
@@ -39,6 +47,6 @@ Example: If database is `loan_app` then test database is `loan_app_testing`
 
 
 
-**Note:** API details in the application are available in the postman collection file (`public/static/loan-app.postman_collection.json`)  
+**Note:** API details in the application are available in the postman collection file (`public/static/loan-app.postman_collection.json`). You can import the postman collection to check the end-points with example responses. 
 
 ##### Reference: [https://laravel.com/](https://laravel.com/docs/5.8/)
