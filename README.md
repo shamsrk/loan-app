@@ -7,6 +7,18 @@ required” and “loan term.” All the loans will be assumed to have a “week
 After the loan is approved, the user must be able to submit the weekly loan repayments. It can be a simplified repay functionality, which won’t
 need to check if the dates are correct but will just set the weekly amount to be repaid. 
 
+### Server Requirements
+Before starting project setup please make sure the following requirements are satisfied.
+- PHP >= 7.1.3 
+- BCMath PHP Extension 
+- Ctype PHP Extension 
+- JSON PHP Extension 
+- Mbstring PHP Extension 
+- OpenSSL PHP Extension 
+- PDO PHP Extension 
+- Tokenizer PHP Extension 
+- XML PHP Extension
+
 ### Project setup 
 
 ##### 1. Clone Project from Github
