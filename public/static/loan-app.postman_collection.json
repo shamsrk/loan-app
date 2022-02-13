@@ -1,0 +1,755 @@
+{
+	"info": {
+		"_postman_id": "4eb96337-deab-4e04-b057-2693d0114b3f",
+		"name": "loan-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mindfire",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "mindfire",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Feb 2022 16:54:01 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Feb 2022 16:54:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.34-28+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6IitEcUR3TUY0aldVQWs2WExSV3lscGc9PSIsInZhbHVlIjoiSElvRTlvQnJ2M05IdCtxZTN2VldDeUwrM2NzMFZXQlpNQ3o1TWNHcnkwMlNjSVhpVXJNWlwvYkNUc1VzTkhqRzEiLCJtYWMiOiIxMDYyNTc4NTFjNDA3ZTJjODA0OWRlOGFlYTFhOGI4MGQ4MzA0ZjdiOGNiZDkyN2U4ZTIwYzI2MGE3MTljNmFhIn0%3D; expires=Sat, 12-Feb-2022 18:54:01 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"A8XhQenoRBjsrW5oVjNvZtO0us9zuYcpDdMarlsujTqM3lCiq1ckVhJqH5IO\",\n    \"code\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "apply-loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "p",
+							"type": "text"
+						},
+						{
+							"key": "loan_term",
+							"value": "60",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "500000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/apply-loan?api_token=gcG0Y4pVKldWiDEya9DpuotV5Omaw4PsDgyiILry7OSvi2q3xsTFdweqpDot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"apply-loan"
+					],
+					"query": [
+						{
+							"key": "api_token",
+							"value": "gcG0Y4pVKldWiDEya9DpuotV5Omaw4PsDgyiILry7OSvi2q3xsTFdweqpDot"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "apply-loan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "p",
+									"type": "text"
+								},
+								{
+									"key": "loan_term",
+									"value": "60",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "500000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/apply-loan?api_token=gcG0Y4pVKldWiDEya9DpuotV5Omaw4PsDgyiILry7OSvi2q3xsTFdweqpDot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"apply-loan"
+							],
+							"query": [
+								{
+									"key": "api_token",
+									"value": "gcG0Y4pVKldWiDEya9DpuotV5Omaw4PsDgyiILry7OSvi2q3xsTFdweqpDot"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:24:45 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:24:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.34-28+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"p\",\n    \"loan_term\": \"60\",\n    \"amount\": \"500000\",\n    \"state\": \"pen\",\n    \"state_updated_at\": \"2022-02-13 06:24:44\",\n    \"user_id\": 1,\n    \"updated_at\": \"2022-02-13 06:24:44\",\n    \"created_at\": \"2022-02-13 06:24:44\",\n    \"id\": 1,\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"User\",\n        \"email\": \"user@gmail.com\",\n        \"email_verified_at\": null,\n        \"api_token\": \"93fa208d5bdd08d9e5182a9cff1bd80cbb1c6926227ca57571f76ae46200b4bd\",\n        \"created_at\": \"2022-02-13 06:18:52\",\n        \"updated_at\": \"2022-02-13 06:23:25\",\n        \"role\": \"user\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "register-admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mindfire",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "mindfire",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register-admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Admin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "mindfire",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "mindfire",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:21:54 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:21:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.34-28+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6IjBLazZcLzM0T2hrbTZJY1ZveU15Q1pBPT0iLCJ2YWx1ZSI6InMzOHlScXUxSjRPS2I1OXhWaGgwYTAzUU5janNoekJ2R05FcXZjTGR0OW5cL2JiVUVDV2tQN291ZE1JSk5QVHhzIiwibWFjIjoiYTZmYzM3ZTQ4OWE2ZmE4MGIwMGQ0ZDJjNjE3ZTRkODQwYmY2ZmIzNzYyNTRmYWQ3ODExNmYwOGY2NTRiZTBmMiJ9; expires=Sun, 13-Feb-2022 08:21:54 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 201\n}"
+				}
+			]
+		},
+		{
+			"name": "register-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "User",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "user@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mindfire",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "mindfire",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "user",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register-user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "User",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "user@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "mindfire",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "mindfire",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:18:52 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:18:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.34-28+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6InNmSE92MHdNMXhLXC9YWjhOcE9LdGtnPT0iLCJ2YWx1ZSI6ImZCeEVzb2w3RGtQczB5ZnEzQjF2WDJhclZLNmNXeDZWMXZ1Wjh4QmlMRHcyUzJsZDdcL1h1MW1oK1wvMmJ0TWp1cCIsIm1hYyI6ImE5OTM5MjQ4ZTMyNzE3Yzc0ZTEzMmM2MjAwYTVhMmMzMDUzMmFjZjcwMWVkY2FlYjA5YzFlODEyMDAwYjYxZjYifQ%3D%3D; expires=Sun, 13-Feb-2022 08:18:52 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 201\n}"
+				}
+			]
+		},
+		{
+			"name": "approve-loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_request_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/approve-loan?api_token=0WC70EMDZGOfi7HpX32vBZkPHslzq46W0wZcKyzXVh3MnAf0YOKkLNpMm8mA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"approve-loan"
+					],
+					"query": [
+						{
+							"key": "api_token",
+							"value": "0WC70EMDZGOfi7HpX32vBZkPHslzq46W0wZcKyzXVh3MnAf0YOKkLNpMm8mA"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "approve-loan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loan_request_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/approve-loan?api_token=0WC70EMDZGOfi7HpX32vBZkPHslzq46W0wZcKyzXVh3MnAf0YOKkLNpMm8mA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"approve-loan"
+							],
+							"query": [
+								{
+									"key": "api_token",
+									"value": "0WC70EMDZGOfi7HpX32vBZkPHslzq46W0wZcKyzXVh3MnAf0YOKkLNpMm8mA"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:26:25 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:26:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.34-28+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"loan_request_id\": 1,\n    \"sanctioned_amount\": \"500000.00\",\n    \"interest_rate\": \"12.00\",\n    \"instalment_amount\": \"11122.22\",\n    \"instalment_day_id\": 4,\n    \"state\": \"a\",\n    \"state_updated_at\": \"2022-02-13 06:26:25\",\n    \"created_at\": \"2022-02-13 06:26:25\",\n    \"updated_at\": \"2022-02-13 06:26:25\"\n}"
+				}
+			]
+		},
+		{
+			"name": "repay-loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loan_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/repay-loan?api_token=gcG0Y4pVKldWiDEya9DpuotV5Omaw4PsDgyiILry7OSvi2q3xsTFdweqpDot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"repay-loan"
+					],
+					"query": [
+						{
+							"key": "api_token",
+							"value": "gcG0Y4pVKldWiDEya9DpuotV5Omaw4PsDgyiILry7OSvi2q3xsTFdweqpDot"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "repay-loan",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "loan_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/repay-loan?api_token=gcG0Y4pVKldWiDEya9DpuotV5Omaw4PsDgyiILry7OSvi2q3xsTFdweqpDot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"repay-loan"
+							],
+							"query": [
+								{
+									"key": "api_token",
+									"value": "gcG0Y4pVKldWiDEya9DpuotV5Omaw4PsDgyiILry7OSvi2q3xsTFdweqpDot"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:27:08 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 13 Feb 2022 06:27:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.34-28+ubuntu18.04.1+deb.sury.org+1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"loan_request_id\": 1,\n    \"sanctioned_amount\": \"500000.00\",\n    \"interest_rate\": \"12.00\",\n    \"instalment_amount\": \"11122.22\",\n    \"instalment_day_id\": 4,\n    \"state\": \"a\",\n    \"state_updated_at\": \"2022-02-13 06:26:25\",\n    \"created_at\": \"2022-02-13 06:26:25\",\n    \"updated_at\": \"2022-02-13 06:26:25\"\n}"
+				}
+			]
+		}
+	]
+}
