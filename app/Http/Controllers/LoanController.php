@@ -35,7 +35,7 @@ class LoanController extends Controller
     {
         $loan_detail = (new Approve($request))->handle();
 
-        return response($loan_detail, 201)
+        return response($loan_detail, 200)
             ->header('Content-Type', 'application/json');
     }
 
